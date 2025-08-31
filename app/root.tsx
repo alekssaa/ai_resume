@@ -6,6 +6,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from "react-router";
+///failed to upload img greska
 
 import type { Route } from "./+types/root";
 import "./app.css";
