@@ -15,7 +15,9 @@ interface Resume {
 }
 
 interface Feedback {
-  overallScore: number;
+  // overallScore: number;
+  overallRating: number;
+
   ATS: {
     score: number;
     tips: {
@@ -23,7 +25,7 @@ interface Feedback {
       tip: string;
     }[];
   };
-  toneAndStyle: {
+  formattingAndDesign: {
     score: number;
     tips: {
       type: "good" | "improve";
@@ -31,7 +33,7 @@ interface Feedback {
       explanation: string;
     }[];
   };
-  content: {
+  contentQuality: {
     score: number;
     tips: {
       type: "good" | "improve";
@@ -39,7 +41,7 @@ interface Feedback {
       explanation: string;
     }[];
   };
-  structure: {
+  relevanceToJobTarget: {
     score: number;
     tips: {
       type: "good" | "improve";
@@ -47,7 +49,7 @@ interface Feedback {
       explanation: string;
     }[];
   };
-  skills: {
+  atsCompatibility: {
     score: number;
     tips: {
       type: "good" | "improve";

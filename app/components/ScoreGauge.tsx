@@ -11,7 +11,7 @@ const ScoreGauge = ({ score = 75 }: { score: number }) => {
       setPathLength(pathRef.current.getTotalLength());
     }
   }, []);
-
+  console.log(score);
   return (
     <div className="flex flex-col items-center">
       <div className="relative w-40 h-20">
